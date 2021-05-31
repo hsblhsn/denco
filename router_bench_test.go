@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/naoina/denco"
+	"github.com/hsblhsn/denco"
 )
 
 func BenchmarkRouterLookupStatic100(b *testing.B) {

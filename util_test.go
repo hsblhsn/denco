@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/naoina/denco"
+	"github.com/hsblhsn/denco"
 )
 
 func TestNextSeparator(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/naoina/denco"
+	"github.com/hsblhsn/denco"
 )
 
 func routes() []denco.Record {

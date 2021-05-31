@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/naoina/denco"
+	"github.com/hsblhsn/denco"
 )
 
 func testHandlerFunc(w http.ResponseWriter, r *http.Request, params denco.Params) {
