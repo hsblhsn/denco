@@ -1,4 +1,10 @@
-# Denco [![Build Status](https://travis-ci.org/naoina/denco.png?branch=master)](https://travis-ci.org/naoina/denco)
+# Denco
+
+**A fork of [github.com/naoina/denco](github.com/naoina/denco)**
+
+
+### ⚠️ This repo is only for maintaining `denco`. It is not under active development here.
+
 
 The fast and flexible HTTP request router for [Go](http://golang.org).
 
@@ -26,7 +32,7 @@ import (
     "log"
     "net/http"
 
-    "github.com/naoina/denco"
+    "github.com/hsblhsn/denco"
 )
 
 func Index(w http.ResponseWriter, r *http.Request, params denco.Params) {
@@ -59,7 +65,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/naoina/denco"
+	"github.com/hsblhsn/denco"
 )
 
 type route struct {
@@ -93,13 +99,13 @@ func main() {
 }
 ```
 
-See [Godoc](http://godoc.org/github.com/naoina/denco) for more details.
+See [Godoc](http://godoc.org/github.com/hsblhsn/denco) for more details.
 
 ## Getting the value of path parameter
 
 You can get the value of path parameter by 2 ways.
 
-1. Using [`denco.Params.Get`](http://godoc.org/github.com/naoina/denco#Params.Get) method
+1. Using [`denco.Params.Get`](http://godoc.org/github.com/hsblhsn/denco#Params.Get) method
 2. Find by loop
 
 ```go
@@ -108,7 +114,7 @@ package main
 import (
     "fmt"
 
-    "github.com/naoina/denco"
+    "github.com/hsblhsn/denco"
 )
 
 func main() {
@@ -157,7 +163,7 @@ Routes matching are:
 ```
 /user/alice      => "/user/alice" (no match with "/user/:name")
 /user/bob        => "/user/:name"
-/user/naoina/1   => "/user/:name/1"
+/user/hsblhsn/1   => "/user/:name/1"
 /user/alice/1    => "/user/alice/:id" (no match with "/user/:name/:id")
 /user/1/bob      => "/user/:id/bob"   (no match with "/user/:name/:id")
 /user/alice/bob  => "/user/alice/:id" (no match with "/user/:name/:id" and "/user/:id/bob")
@@ -172,7 +178,7 @@ Denco has some limitations below.
 
 ## Benchmarks
 
-    cd $GOPATH/github.com/naoina/denco
+    cd $GOPATH/github.com/hsblhsn/denco
     go test -bench . -benchmem
 
 ## License
