@@ -1,6 +1,6 @@
 # Denco [![Go](https://github.com/hsblhsn/denco/actions/workflows/go.yml/badge.svg)](https://github.com/hsblhsn/denco/actions/workflows/go.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/hsblhsn/denco.svg)](https://pkg.go.dev/github.com/hsblhsn/denco)
 
-**A fork of [github.com/naoina/denco](github.com/naoina/denco)**
+**A fork of [github.com/naoina/denco](https://github.com/naoina/denco)**
 
 
 ### ⚠️ This repo is only for maintaining `denco`. It is not under active development here.
